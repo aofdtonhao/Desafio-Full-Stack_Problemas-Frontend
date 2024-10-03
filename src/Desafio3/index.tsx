@@ -7,33 +7,27 @@ import {useState} from 'react';
 
 export const Desafio3 = ()=> {
   const [list, setList] = useState([
-    1, 2
-  ])
+    1, 2, 3, 4
+  ]);
+
+  function mostraQuantidade() {
+    const quantidade = list.length;
+    return quantidade;
+  }
+
+  function mostraLista() {
+    return (list.map(item => <li>item: {item}</li>));
+  }
 
 
   return (
     <>
       <div>
-        {(()=>{
-          const quantidade = list.length
-          return (
-            <>
-              {
-                (()=>{
-                  return (
-                    <>
-                      <span> quantidade: {quantidade}</span>
-                      <ul>
-                        {(()=>list.map(item=><li>item: {item}</li>))()}
-                      </ul>
-                    </>
-                  )
-                })()
-              }
-            </>
-          )
-        })()}
+        <span>quantidade: {mostraQuantidade()}</span>
+        <ul>
+          {mostraLista()}
+        </ul>
       </div>
     </>
-  )
+  );
 }

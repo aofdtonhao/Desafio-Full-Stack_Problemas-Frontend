@@ -5,13 +5,20 @@ import {useState} from 'react';
   de errado e também a solução que você encontrou.
 
   Resposta / comentários sobre a sua solução:
-
+    Problema: Não vejo problemas.
+    Solução: "Se o problema possui solução, não devemos nos preocupar com ele. E se não possui solução, de nada adianta nos preocuparmos" - Epiteto.
 */
 
 export const Desafio2 = ()=> {
   const [list, setList] = useState([
-    1, 2
+    1, 2, 3
   ]);
 
-  return (<ul>{list.map(item => <li>item: {item}</li>)}</ul>)
+  return (
+    <>
+      <ul>
+        {list.map(item => <li>item: {item}</li>)}
+      </ul>
+    </>
+  );
 }
