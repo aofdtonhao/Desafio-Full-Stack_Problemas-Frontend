@@ -10,15 +10,17 @@ import {useState} from 'react';
 */
 
 export const Desafio2 = ()=> {
+  
   const [list, setList] = useState([
-    1, 2, 3
+    1, 2
   ]);
 
   return (
     <>
       <ul>
-        {list.map(item => <li>item: {item}</li>)}
+        {list.map(item => <li key={item}>item: {item}</li>)}
       </ul>
     </>
   );
+
 }

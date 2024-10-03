@@ -15,6 +15,7 @@ import React, {useEffect, useState} from 'react';
 */
 
 export const Desafio4 = () => {
+
   const [count1, setCount1] = useState(0);
   const [count2, setCount2] = useState(0);
   const [count3, setCount3] = useState(0);
@@ -44,5 +45,6 @@ export const Desafio4 = () => {
       <p data-testid="total">total: {total}</p>
       <p data-testid="length">tamanho da lista: {list.length}</p>
     </>
-  )
+  );
+
 }

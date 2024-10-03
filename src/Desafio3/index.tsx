@@ -6,6 +6,7 @@ import {useState} from 'react';
 */
 
 export const Desafio3 = ()=> {
+
   const [list, setList] = useState([
     1, 2, 3, 4
   ]);
@@ -16,9 +17,8 @@ export const Desafio3 = ()=> {
   }
 
   function mostraLista() {
-    return (list.map(item => <li>item: {item}</li>));
+    return (list.map(item => <li key={item}>item: {item}</li>));
   }
-
 
   return (
     <>
@@ -30,4 +30,5 @@ export const Desafio3 = ()=> {
       </div>
     </>
   );
+
 }

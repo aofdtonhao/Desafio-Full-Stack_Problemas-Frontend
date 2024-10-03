@@ -6,7 +6,9 @@ interface ItemProps {
   parOuImpar(num: number): string;
 }
 export const Item: React.FC<ItemProps> = ({ valor, parOuImpar }) => {
+  
   const { renderCounter, count, addCount } = useItemController();
+  
   return (
     <li>
       <button onClick={addCount}>
@@ -18,4 +20,5 @@ export const Item: React.FC<ItemProps> = ({ valor, parOuImpar }) => {
       <p>renderizou: {renderCounter}</p>
     </li>
   );
+
 };

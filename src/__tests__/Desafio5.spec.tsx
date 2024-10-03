@@ -5,7 +5,7 @@ import user from '@testing-library/user-event';
 describe('Desafio5',()=>{
 
   it('Deve ser Renderizado com os valores corretos 1',async ()=>{
-    const  component = render(<Desafio5 />);
+    const component = render(<Desafio5 />);
     const btn1 =await component.getByTestId('btn1');
     const size =await component.getByTestId('size');
     await user.click(btn1);

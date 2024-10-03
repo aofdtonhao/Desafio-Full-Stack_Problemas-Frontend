@@ -13,7 +13,9 @@ import { useDesafio5Controller } from "./useDesafio5Controller";
 */
 
 export function Desafio5() {
+
   const { list, addItem, numero, parOuImpar } = useDesafio5Controller();
+  
   return (
     <>
       <button onClick={addItem} data-testid="btn1">adiciona + 1 item na lista</button>
@@ -28,4 +30,5 @@ export function Desafio5() {
       </ul>
     </>
   );
+
 }

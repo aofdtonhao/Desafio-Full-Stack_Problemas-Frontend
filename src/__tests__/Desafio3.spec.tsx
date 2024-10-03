@@ -6,6 +6,7 @@ describe('Desafio3',()=>{
   it('Deve ser Renderizado',()=>{
     const component = render(<Desafio3 />);
     expect(component).toMatchSnapshot();
+    expect(component).toBeTruthy();
   });
 
 });
