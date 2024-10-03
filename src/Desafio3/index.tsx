@@ -8,24 +8,20 @@ import {useState} from 'react';
 export const Desafio3 = ()=> {
 
   const [list, setList] = useState([
-    1, 2, 3, 4
+    1, 2
   ]);
 
   function mostraQuantidade() {
-    const quantidade = list.length;
-    return quantidade;
-  }
-
-  function mostraLista() {
-    return (list.map(item => <li key={item}>item: {item}</li>));
+    const quantidade1 = list.length;
+    return quantidade1;
   }
 
   return (
     <>
       <div>
-        <span>quantidade: {mostraQuantidade()}</span>
+        <span> quantidade: {mostraQuantidade()}</span>
         <ul>
-          {mostraLista()}
+          {list.map(item => <li key={item}>item: {item}</li>)}
         </ul>
       </div>
     </>
