@@ -27,7 +27,7 @@ export const Desafio4 = () => {
     if (totalCount > 0) { // Não é a solução mais bonita, mas na pressa vai
       setList([...list, totalCount]);
     }
-  }, [count1, count2, count3]);
+  }, [count1, count2, count3]); // Problemas 1 e 2 resolvidos aqui
 
   const addCount1 = () => setCount1(count1 + 1);
   const addCount2 = () => setCount2(count2 + 2);
