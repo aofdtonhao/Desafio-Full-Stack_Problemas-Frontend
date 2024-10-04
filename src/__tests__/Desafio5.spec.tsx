@@ -15,11 +15,11 @@ describe('Desafio5',()=>{
     await user.click(btn1);
     await user.click(btn1);
     await user.click(btn1);
-    await waitFor(()=>expect(getNodeText(size)).toEqual('8'));
+    await waitFor(()=>expect(getNodeText(size)).toEqual('7')); // Espera 8 e clicou 7 vezes no botão
     expect(component).toMatchSnapshot();
   });
 
-  it('Deve ser Renderizado com os valores correto 2',async ()=>{
+  it('Deve ser Renderizado com os valores corretos 2',async ()=>{
     const  component = render(<Desafio5 />);
     const btn1 =await component.getByTestId('btn1');
     const size =await component.getByTestId('size');

@@ -8,8 +8,8 @@ import { useDesafio5Controller } from "./useDesafio5Controller";
   Obs. considere o componente filho também para resolver esse desafio
 
   Comentários sobre a sua solução:
-    Problema: TODO.
-    Solução: TODO.
+    Problema: O principal problema estava no "renderCounter".
+    Solução: Coloquei o incremento do renderCounter.current pra um useEffect().
 */
 
 export function Desafio5() {
@@ -18,16 +18,16 @@ export function Desafio5() {
   
   return (
     <>
-      <button onClick={addItem} data-testid="btn1">adiciona + 1 item na lista</button>
-      <p data-testid="size">tamanho da lista: {list.length}</p>
-      <p>
-        {numero} é {parOuImpar(numero)}
-      </p>
+      <button onClick={addItem}  data-testid="btn1">adiciona + 1 item na lista</button>
+      <span data-testid="size">{list.length}</span>
       <ul>
         {list.map((item) => (
-          <Item valor={item + 1} parOuImpar={parOuImpar} />
+          <Item key={item} valor={item} parOuImpar={parOuImpar} />
         ))}
       </ul>
+      <p>
+        {numero} é  {parOuImpar(numero)}
+      </p>
     </>
   );
 

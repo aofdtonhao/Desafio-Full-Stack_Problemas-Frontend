@@ -7,7 +7,7 @@ interface ItemProps {
 }
 export const Item: React.FC<ItemProps> = ({ valor, parOuImpar }) => {
   
-  const { renderCounter, count, addCount } = useItemController();
+  const { count, addCount, renderCounter } = useItemController();
   
   return (
     <li>

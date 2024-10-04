@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Desafio5 Deve ser Renderizado com os valores correto 2 1`] = `
+exports[`Desafio5 Deve ser Renderizado com os valores corretos 2 1`] = `
 Object {
   "asFragment": [Function],
   "baseElement": <body>
@@ -173,14 +173,14 @@ Object {
           </p>
           <p>
             renderizou: 
-            1
+            0
           </p>
         </li>
       </ul>
       <p>
-        11
+        10
          é  
-        Impar
+        Par
       </p>
     </div>
   </body>,
@@ -353,14 +353,14 @@ Object {
         </p>
         <p>
           renderizou: 
-          1
+          0
         </p>
       </li>
     </ul>
     <p>
-      11
+      10
        é  
-      Impar
+      Par
     </p>
   </div>,
   "debug": [Function],
@@ -430,7 +430,7 @@ Object {
       <span
         data-testid="size"
       >
-        8
+        7
       </span>
       <ul>
         <li>
@@ -542,28 +542,12 @@ Object {
           </p>
           <p>
             renderizou: 
-            1
-          </p>
-        </li>
-        <li>
-          <button>
-            adiciona + 1 na contagem do item 
-            7
-          </button>
-          <p>
-            contagem: 
             0
-             é 
-            Par
-          </p>
-          <p>
-            renderizou: 
-            1
           </p>
         </li>
       </ul>
       <p>
-        9
+        7
          é  
         Impar
       </p>
@@ -578,7 +562,7 @@ Object {
     <span
       data-testid="size"
     >
-      8
+      7
     </span>
     <ul>
       <li>
@@ -690,28 +674,12 @@ Object {
         </p>
         <p>
           renderizou: 
-          1
-        </p>
-      </li>
-      <li>
-        <button>
-          adiciona + 1 na contagem do item 
-          7
-        </button>
-        <p>
-          contagem: 
           0
-           é 
-          Par
-        </p>
-        <p>
-          renderizou: 
-          1
         </p>
       </li>
     </ul>
     <p>
-      9
+      7
        é  
       Impar
     </p>

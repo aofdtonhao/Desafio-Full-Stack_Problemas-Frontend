@@ -15,11 +15,4 @@ module.exports = {
     "json",
     "node"
   ],
-  modulePathIgnorePatterns: [
-    //"Desafio1.spec.tsx",
-    //"Desafio2.spec.tsx",
-    //"Desafio3.spec.tsx",
-    //"Desafio4.spec.tsx",
-    "Desafio5.spec.tsx"
-  ]
 };
