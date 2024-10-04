@@ -5,8 +5,8 @@ import {useState} from 'react';
   de errado e também a solução que você encontrou.
 
   Resposta / comentários sobre a sua solução:
-    Problema: Não vejo problemas.
-    Solução: "Se o problema possui solução, não devemos nos preocupar com ele. E se não possui solução, de nada adianta nos preocuparmos" - Epiteto.
+    Problema: Each child in a list should have a unique "key" prop.
+    Solução: Linha 21.
 */
 
 export const Desafio2 = ()=> {
