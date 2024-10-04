@@ -25,20 +25,18 @@ export const Desafio4 = () => {
   useEffect(() => {
     const totalCount = count1 + count2 + count3;
     setTotal(totalCount);
-    if (totalCount > 0) { // Não é a solução mais bonita, mas na pressa vai
-      setList([...list, totalCount]);
-    }
+    setList([...list, totalCount]);
   }, [count1, count2, count3]); // Problemas 1 e 2 resolvidos aqui
 
   const addCount1 = () => setCount1(count1 + 1);
-  const addCount2 = () => setCount2(count2 + 2);
-  const addCount3 = () => setCount3(count3 + 3);
+  const addCount2 = () => setCount2(count2 + 1);
+  const addCount3 = () => setCount3(count3 + 1);
 
   return (
     <>
       <button onClick={addCount1} data-testid="btn1">adiciona + 1 na contagem 1</button><br/>
-      <button onClick={addCount2} data-testid="btn2">adiciona + 2 na contagem 2</button><br/>
-      <button onClick={addCount3} data-testid="btn3">adiciona + 3 na contagem 3</button><br/>
+      <button onClick={addCount2} data-testid="btn2">adiciona + 1 na contagem 2</button><br/>
+      <button onClick={addCount3} data-testid="btn3">adiciona + 1 na contagem 3</button><br/>
       <p data-testid="v1">v1: {count1}</p>
       <p data-testid="v2">v2: {count2}</p>
       <p data-testid="v3">v3: {count3}</p>
